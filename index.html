@@ -3,26 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Lydia's App</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter" />
-        <input type="submit" value="Seach" />
-      </form>
-    </header>
-    <main>
-      <div class="weather-app">
-        <h1>Paris</h1>
-        <p>
-          Tuesday 14:49, scattered clouds
-          <br />
-          Humiditiy: 66%, Wind: 3.13km/h
-        </p>
+      <header>
+        <form class="Search-form">
+          <input type="search" placeholder="Enter" class="search-form-button" />
+          <input type="submit" value="Seach" class="search-form-input" />
+        </form>
+      </header>
+<main>
+      <div class="weather-app-data">
+        <div class="weather-app">
+          <h1 class="weather-app-city">Paris</h1>
+          <p class="weather-app-details">
+            Tuesday 14:49, scattered clouds
+            <br />
+            Humiditiy: <strong>66%</strong>, Wind:<strong>3.13km/h</strong>
+          </p>
+        </div>
+
+        <div class="weather-app-temperature-container"></div>
+        <div class="weather-app-icon">🌥️</div>
+        <div class="weather-app-temperature">12</div>
+        <div class="weather-app-unit°"></div>
       </div>
-      <div>🌥️12°</div>
     </main>
     <footer>
       Coded by <a href="https://github.com/lydiarenee">Lydia T,</a> code hosted
@@ -30,5 +36,6 @@
       website hosted on
       <a href="https://big-lydi-weather-app.netlify.app/">Netlify</a>
     </footer>
+</div>
   </body>
 </html>
